@@ -27,7 +27,7 @@ export default function Hero() {
       <div className="container mx-auto px-6 md:px-12 z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center pb-28">
         {/* Left Content */}
         <div className="flex flex-col items-start gap-6">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -69,7 +69,7 @@ export default function Hero() {
             </AnimatePresence>
           </div>
 
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.8 }}
@@ -78,7 +78,7 @@ export default function Hero() {
             I build exceptional digital experiences that blend stunning aesthetics with high-performance engineering
           </motion.p>
 
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1 }}
@@ -89,7 +89,7 @@ export default function Hero() {
               <ArrowRight className="w-5 h-5 relative z-10 group-hover:translate-x-1 transition-transform" />
               <div className="absolute inset-0 bg-primary translate-y-[100%] group-hover:translate-y-0 transition-transform duration-300 ease-in-out" />
             </a>
-            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="group px-8 py-4 glass-pane text-white font-semibold rounded-lg flex items-center gap-2 hover:bg-white/10 transition-colors">
+            <a href="/REsume.pdf" download="Shahab_Sadiq_Resume.pdf" className="group px-8 py-4 glass-pane text-white font-semibold rounded-lg flex items-center gap-2 hover:bg-white/10 transition-colors">
               <span>Download CV</span>
               <Download className="w-5 h-5 group-hover:-translate-y-1 transition-transform" />
             </a>
@@ -97,7 +97,7 @@ export default function Hero() {
         </div>
 
         {/* Right Content - 3D Glowing Picture */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, ease: "easeOut" }}
@@ -114,7 +114,7 @@ export default function Hero() {
             <div className="absolute inset-0 rounded-full overflow-hidden border-2 border-primary/50 shadow-[0_0_50px_rgba(0,245,255,0.4)] z-20">
               <img src="/my_picture.jpg" alt="Shahab" className="w-full h-full object-cover" />
             </div>
-            
+
             {/* Glowing Rings (3D simulated) */}
             <div className="absolute inset-[-10%] rounded-full border border-secondary/30 transform translate-z-[-20px] shadow-[0_0_30px_rgba(255,215,0,0.1)]"></div>
             <div className="absolute inset-[-20%] rounded-full border border-primary/20 transform translate-z-[-40px] shadow-[0_0_40px_rgba(0,245,255,0.15)] animate-spin-slow"></div>
@@ -123,7 +123,7 @@ export default function Hero() {
       </div>
 
       <div className="absolute bottom-0 w-full overflow-hidden border-y border-white/5 bg-black/40 backdrop-blur-sm py-3 flex">
-        <motion.div 
+        <motion.div
           className="flex whitespace-nowrap shrink-0"
           animate={{ x: ["0%", "-100%"] }}
           transition={{ ease: "linear", duration: 50, repeat: Infinity }}
@@ -138,8 +138,8 @@ export default function Hero() {
             </span>
           ))}
         </motion.div>
-        
-        <motion.div 
+
+        <motion.div
           className="flex whitespace-nowrap shrink-0"
           animate={{ x: ["0%", "-100%"] }}
           transition={{ ease: "linear", duration: 50, repeat: Infinity }}
